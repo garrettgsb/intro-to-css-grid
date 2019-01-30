@@ -1,0 +1,21 @@
+@media screen and (max-width: 640px) {
+  main {
+    grid-template-areas:
+    "title"
+    "p1"
+    "image"
+    "p2";
+    width: 100vw;
+    padding: 0;
+  }
+
+  main > p, main > img {
+    max-width: 100%;
+    padding: 5%;
+    border: none;
+  }
+
+  main > img {
+    place-self: center;
+  }
+}

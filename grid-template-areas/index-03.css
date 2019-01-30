@@ -1,0 +1,54 @@
+body {
+  background: blanchedalmond;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+  "title p1 image"
+  "title p2 image";
+
+  place-content: start;
+  width: 80vw;
+  padding: 2em;
+  overflow-x: scroll;
+
+  background: aliceblue;
+  box-shadow: 2px 2px 8px #222;
+
+}
+
+main > h1 {
+  grid-area: title;
+
+  text-align: right;
+  border-bottom: 2px solid #222;
+  font-size: 1.5em;
+  padding: 0.5em;
+  writing-mode: sideways-lr;
+}
+
+main > p {
+  max-width: 40ch;
+  min-width: 20ch;
+  padding: 1em;
+  border-left: 2px solid #222;
+  align-self: end;
+}
+
+main > .p1 {
+  grid-area: p1;
+}
+
+main > .p2 {
+  grid-area: p2;
+  max-width: 80ch;
+}
+
+img {
+  max-height: 40ch;
+  grid-area: image;
+  justify-self: end;
+  align-self: center;
+  mix-blend-mode: multiply;
+}

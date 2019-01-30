@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Abril";
+  src: url('fonts/Abril_Fatface/AbrilFatface-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url('fonts/Playfair_Display/PlayfairDisplay-Black.ttf');
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url('fonts/Lato/Lato-Regular.ttf');
+}
+
+:root {
+  --cover-height: 95vh;
+  --cover-width: calc(95vh / 1680 * 1120); /* Width is calculated based on background image aspect ratio */
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: blanchedalmond;
+  font-family: "Lato";
+  font-size: calc(var(--cover-width) / 25);
+}
+
+main {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 0.8fr repeat(4, 1fr);
+
+  width: var(--cover-width);
+  height: var(--cover-height);
+  background: url('this-sloth.jpg');
+  background-size: cover;
+  box-shadow: 2px 2px 8px #222;
+}
+
+h2 {
+  font-family: "Playfair";
+}
+
+/* MASTHEAD */
+
+.masthead {
+  grid-column: 1/4;
+  justify-self: center;
+  align-self: start;
+
+  display: flex;
+  justify-content: stretch;
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  font-family: "Abril";
+
+  font-size: 3em;
+  margin: 0;
+  width: 100%;
+  align-items: center;
+}
+
+.masthead-a {
+  grid-column: 1/3;
+  background: black;
+  color: white;
+  justify-content: flex-end;
+  padding-right: 0;
+}
+
+.masthead-b {
+  grid-column: 3/4;
+  background: white;
+  color: black;
+  padding-left: 0;
+}
+
+/* MAIN STORY */
+
+.main-story {
+  grid-column: 3/4;
+  grid-row: 3/5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  justify-self: end;
+  align-self: end;
+}
+
+.main-story > * {
+  margin: 0;
+}
+
+.main-story > h2 {
+  font-family: "Playfair";
+  text-align: right;
+  background-color: black;
+  color: white;
+  padding: 0.5em 0.1em;
+}
+
+.main-story > p {
+  background-color: white;
+  font-family: "Lato";
+  padding-right: 0.5em;
+  text-align: right;
+}
+
+.main-story > .upper {
+  margin-bottom: -0.5em;
+  z-index: 0;
+}
+
+.main-story > .lower {
+  margin-top: -0.5em;
+  z-index: 0;
+}
+
+/* COVERLINES */
+
+section {
+  justify-self: start;
+  align-self: end;
+}
+
+section > * {
+  margin: 0;
+  padding-left: 0.2em;
+}
+
+section > h2 {
+  background: white;
+}
+
+section > p {
+  color: white;
+  text-shadow: 2px 2px 2px #222;
+}
+
+.coverline-a {
+  grid-row: 3/4;
+}
+
+.coverline-b {
+  grid-row: 4/5;
+}

@@ -1,0 +1,82 @@
+body {
+  background: blanchedalmond;
+  font-size: 18px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(5, 10em);
+  grid-template-rows: repeat(4, 10em);
+}
+
+main > div {
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+main > div:nth-child(1) {
+  background: tomato;
+  grid-column: 2 / 5;
+  grid-row: 1 / 4;
+}
+
+main > div:nth-child(2) {
+  background: chartreuse;
+  grid-column: 1 / 4;
+  grid-row: 2 / 5;
+}
+main > div:nth-child(3) {
+  background: cornflowerblue;
+  grid-column: 3 / 6;
+  grid-row: 2 / 5;
+}
+
+main > p {
+  place-self: center;
+  z-index: 0;
+
+  font-family: Helvetica;
+}
+
+main > .a {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-self: end;
+}
+
+main > .b {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  place-self: end;
+}
+
+main > .c {
+  grid-column: 5/6;
+  grid-row: 3/4;
+  justify-self: start;
+  align-self: end;
+}
+
+main > .a-b {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: end;
+}
+
+main > .a-c {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  align-self: end;
+}
+
+main > .b-c {
+  align-self: start;
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+main > .a-b-c {
+  grid-column: 3/4;
+  grid-row: 3/4;
+
+}
