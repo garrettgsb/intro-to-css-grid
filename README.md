@@ -80,7 +80,7 @@ With CSS Grid, overlapping elements is as simple as telling them to occupy the s
 * `display: grid` - As opposed to `display: none`, which would hide it completely.
 * `grid-template-columns` - Each parameter defines the size of the **tracks** on the **inline axis** (usually the lefty-righty axis)
 * `grid-template-rows` - Each parameter defines the size of the **tracks** on the **block axis** (usually the uppy-downy axis)
-* `grid-template-area` - Each parameter is a string, which describes the **columns** on that **row**. More strings mean more rows.
+* `grid-template-areas` - Each parameter is a string, which describes the **columns** on that **row**. More strings mean more rows.
 
 **On a grid item:**
 
