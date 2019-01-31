@@ -1,0 +1,28 @@
+body {
+  background: blanchedalmond;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 240px max-content 240px;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+main > * {
+  width: 100%; /* Tell it to take up 100% of its track, otherwise these huge images will just overflow. */
+}
+
+main > h1 {
+  background: linear-gradient(red, black 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  font-family: Impact;
+  font-style: italic;
+  padding: 0.1em;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}

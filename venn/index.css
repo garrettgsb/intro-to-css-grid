@@ -1,6 +1,7 @@
 body {
-  background: blanchedalmond;
+  background: linear-gradient(blanchedalmond,mistyrose);
   font-size: 18px;
+  min-height: 100vh;
 }
 
 main {
