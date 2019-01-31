@@ -1,0 +1,183 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: blanchedalmond;
+}
+
+/* DENMARK */
+
+ .denmark {
+   grid-template-columns: 1fr 80px 2fr;
+   grid-template-rows: 1fr 80px 1fr;
+   background: red;
+ }
+
+ .denmark > .vbar {
+   grid-column: 2/3;
+   grid-row: 1/4;
+   background: white;
+ }
+
+ .denmark > .hbar {
+   grid-column: 1/4;
+   grid-row: 2/3;
+   background: white;
+ }
+
+/* SWEDEN */
+
+figure {
+  display: grid;
+  width: 480px;
+  height: 320px;
+  margin: 20vh auto;
+  box-shadow: 2px 2px 8px #222;
+}
+
+
+ .switzerland {
+   grid-template-columns: 1fr repeat(3, 80px) 1fr;
+   grid-template-rows: 1fr repeat(3, 80px) 1fr;
+   background: red;
+ }
+
+ .switzerland > .vbar {
+   grid-column: 3/4;
+   grid-row: 2/5;
+   background: white;
+ }
+
+ .switzerland > .hbar {
+   grid-column: 2/5;
+   grid-row: 3/4;
+   background: white;
+ }
+
+
+/* NORWAY */
+
+ .norway {
+   grid-template-columns: 1fr 80px 2fr;
+   grid-template-rows: 1fr 80px 1fr;
+   background: red;
+ }
+
+ .norway > .vbar.white {
+   grid-column: 2/3;
+   grid-row: 1/4;
+   background: white;
+ }
+
+ .norway > .hbar.white {
+   grid-column: 1/4;
+   grid-row: 2/3;
+   background: white;
+ }
+
+ .norway > .vbar.blue {
+   grid-column: 2/3;
+   grid-row: 1/4;
+   justify-self: center;
+
+   width: 70%;
+
+   background: mediumblue;
+ }
+
+ .norway > .hbar.blue {
+   grid-column: 1/4;
+   grid-row: 2/3;
+   align-self: center;
+
+   height: 70%;
+   background: mediumblue;
+ }
+
+/* JAPAN */
+
+.japan {
+  grid-template-columns: 1fr 200px 1fr;
+  grid-template-rows: 1fr 200px 1fr;
+  background: white;
+}
+
+.japan > .circle {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background: red;
+  border-radius: 50%;
+}
+
+
+/* ALGERIA */
+
+.algeria {
+  grid-template-columns: 1fr max-content max-content 1fr;
+  background: magenta;
+}
+
+.algeria > .left {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background: darkgreen;
+}
+
+.algeria > .right {
+  grid-column: 3/6;
+  grid-row: 1/2;
+  background: white;
+}
+
+.algeria > h1 {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  align-self: center;
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  color: red;
+  font-size: 240px;
+}
+
+/* CHILE */
+
+.chile {
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  background: magenta;
+}
+
+.chile > .left {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background: mediumblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.chile > .left > h1 {
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  font-size: 80px;
+  text-align: center;
+}
+
+.chile > .right {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  background: white;
+}
+
+.chile > .bottom {
+  grid-column: 1 / -1;
+  background: red;
+}
