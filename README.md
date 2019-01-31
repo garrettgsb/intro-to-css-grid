@@ -1,11 +1,14 @@
 # Examples
 
-* The Holy Grail in Grid
-* Overlapping: A Gallery With Captions
-* Responsive Layouts With Alternate Templates
-* Magazine Cover
-* Overlapping: A Three-Way Venn Diagram
-* A Small Subset of Carefully Selected National Flags in Pure CSS
+* [This README but on GitHub Pages](https://garrettgsb.github.io/intro-to-css-grid)
+* [Rock, Scissors, Paper: Explicit Grid Tracks](https://garrettgsb.github.io/intro-to-css-grid/explicit-tracks)
+* [Kind Of Some Boxes: Implicit Grid Tracks](https://garrettgsb.github.io/intro-to-css-grid/implicit-tracks)
+* [The Holy Grail in Grid](https://garrettgsb.github.io/intro-to-css-grid/holy-grail)
+* [Overlapping: A Gallery With Captions](https://garrettgsb.github.io/intro-to-css-grid/gallery-with-captions)
+* [Responsive Layouts With Alternate Templates](https://garrettgsb.github.io/intro-to-css-grid/grid-template-areas)
+* [Magazine Cover](https://garrettgsb.github.io/intro-to-css-grid/magazine/)
+* [Overlapping: A Three-Way Venn Diagram](https://garrettgsb.github.io/intro-to-css-grid/venn)
+* [A Small Subset of Carefully Selected National Flags in Pure CSS](https://garrettgsb.github.io/intro-to-css-grid/flags)
 
 # Grid vs. Flexbox
 
