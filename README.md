@@ -20,7 +20,7 @@ Designing with Flexbox is essentially designing in one dimension at a time: Two-
 
 Also: In two-dimensional layouts using Flexbox, we can only tell items to arrange along one dimension. If we want both horizontal _and_ vertical alignment, or two-dimensional positioning, we are stuck.
 
-![Image of Grid alignment vs. Flexbox alignment]('readme-images/grid-flexbox-alignment.png')
+![Image of Grid alignment vs. Flexbox alignment](readme-images/grid-flexbox-alignment.png)
 
 Grid solves both of these problems by allowing grid items to orient themselves along two dimensions, instead of just one. In the image above, the Grid items are aligned both horizontally and vertically. The Flex items are aligne only horizontally-- The second row has no way to refer to the first row so that they end up aligning in the same way. **This isn't always bad**, but when you want the Grid look instead of the Flexbox look, the Flexbox solution is-- I hate to say it-- hacky.
 
